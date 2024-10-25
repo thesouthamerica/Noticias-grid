@@ -1,0 +1,142 @@
+:root{
+    --amarelo: #BFF009;
+    --amareloescuro: #232e01;
+    --cinza: #868585;
+    --preto: #1e1e1e;
+    --branco: #ffffff;
+    --cinzaClaro: #F2F2F2;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+header{
+    padding: 19px 0px;
+}
+
+header section{
+    width: 1312px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 200px 522px 190px;
+    gap: 200px;
+}
+
+
+header section nav{
+    border-radius: 5px;
+    gap: 32px;
+    background-color: var(--cinzaClaro);
+    padding: 16px;
+    
+}
+
+header section nav a{
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--preto);
+}
+
+
+header section > a{
+    border-radius: 5px;
+    color: var(--preto);
+    background-color: var(--amarelo) ;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+header section > a:hover{
+    border-radius: 5px;
+    color: var(--cinzaClaro);
+    background-color: var(--amareloescuro) ;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+main section{
+    width: 1312px;
+    margin: 64px auto;
+}
+
+main header{
+    padding: 0px;
+    text-align: center;
+}
+
+main header small{
+    padding: 8px;
+    background-color: var(--amarelo);
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--preto)
+}
+main header h1{
+    font-size: 48px;
+    padding: 8px 0px;
+
+}
+main header p{
+    font-size: 14px;
+    color: var(--cinza);
+    width: 354px;
+    margin: 0px auto;
+}
+main section > section{
+    display: grid;
+    grid-template-columns: 416px 416px 416px;
+    gap:32px;
+}
+main section .card{
+    width: 368px;
+    padding: 24px;
+    gap: 16px;
+    display: grid;
+    background-color: var(--cinzaClaro);
+    border-radius: 8px;
+
+}
+
+main section .card a{
+    color: var(--preto);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+main section.card p{
+    color: var(--cinza);
+    font-size: 14px;
+}
+main section .card:hover{
+    background-color: var(--preto);
+    color: var(--cinzaClaro);
+}
+main section .card:hover a{
+    color: var(--cinzaClaro);
+}
+
+
+footer{
+    text-align: center;
+    background-color: var(--preto);
+    color: var(--cinza);
+    padding: 46px 0px;
+}
